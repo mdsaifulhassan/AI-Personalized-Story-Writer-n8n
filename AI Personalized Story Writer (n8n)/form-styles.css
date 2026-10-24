@@ -1,0 +1,65 @@
+.card::before {
+  content: "";
+  display: block;
+  height: 200px;
+  margin: -30px -25px 24px -25px;
+  background: url("https://www.inkfluenceai.com/images/blog/how-to-write-fiction-with-ai-free.webp") center / cover no-repeat;
+  border-radius: 8px 8px 0 0;
+}
+body {
+  background: #fdf3e1 !important;
+}
+/* Bold every question title */
+.form-label,
+.form-group > label,
+fieldset > legend,
+.form-group legend {
+  font-weight: 700 !important;
+}
+
+/* Keep radio and checkbox options normal */
+.radio-label,
+.checkbox-label,
+.radio-option label,
+.checkbox-option label {
+  font-weight: 400 !important;
+}
+/* Phone */
+@media (max-width: 600px) {
+  .container,
+  .main-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 10px !important;
+  }
+
+  .card {
+    padding: 16px !important;
+  }
+
+  .card::before {
+    height: 150px;
+    margin: 0 0 16px 0;
+  }
+
+  input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+  font-size: 16px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Restore round radio buttons and square checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+  width: 20px !important;
+  height: 20px !important;
+  min-width: 20px !important;
+  flex: 0 0 20px !important;
+  margin: 0 12px 0 0 !important;
+  padding: 0 !important;
+}
+
+  
+}
